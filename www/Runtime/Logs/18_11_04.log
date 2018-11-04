@@ -1,0 +1,128 @@
+[ 2018-11-04T11:45:30+08:00 ] ::1 /onethink/www/index.php?s=/admin/public/login.html
+INFO: [ app_begin ] --START--
+INFO: Run Think\Behavior\ReadHtmlCache [ RunTime:0.000049s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000556s ]
+INFO: [ action_begin ] --START--
+INFO: [ action_begin ] --END-- [ RunTime:0.000026s ]
+SQL: SHOW COLUMNS FROM `onethink_ucenter_member` [ RunTime:0.004583s ]
+SQL: SELECT * FROM `onethink_ucenter_member` WHERE ( `username` = 'root' ) LIMIT 1   [ RunTime:0.000325s ]
+
+[ 2018-11-04T11:45:39+08:00 ] ::1 /onethink/www/index.php?s=/admin/public/login.html
+INFO: [ app_begin ] --START--
+INFO: Run Think\Behavior\ReadHtmlCache [ RunTime:0.000052s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000571s ]
+INFO: [ action_begin ] --START--
+INFO: [ action_begin ] --END-- [ RunTime:0.000026s ]
+SQL: SHOW COLUMNS FROM `onethink_ucenter_member` [ RunTime:0.004584s ]
+SQL: SELECT * FROM `onethink_ucenter_member` WHERE ( `username` = 'root' ) LIMIT 1   [ RunTime:0.000282s ]
+
+[ 2018-11-04T11:46:05+08:00 ] ::1 /onethink/www/index.php?s=/admin/public/login.html
+INFO: [ app_begin ] --START--
+INFO: Run Think\Behavior\ReadHtmlCache [ RunTime:0.000051s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000562s ]
+INFO: [ action_begin ] --START--
+INFO: [ action_begin ] --END-- [ RunTime:0.000032s ]
+SQL: SHOW COLUMNS FROM `onethink_ucenter_member` [ RunTime:0.004575s ]
+SQL: SELECT * FROM `onethink_ucenter_member` WHERE ( `username` = 'root' ) LIMIT 1   [ RunTime:0.000282s ]
+
+[ 2018-11-04T11:46:21+08:00 ] ::1 /onethink/www/index.php?s=/admin/public/login.html
+INFO: [ app_begin ] --START--
+INFO: Run Think\Behavior\ReadHtmlCache [ RunTime:0.000051s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000568s ]
+INFO: [ action_begin ] --START--
+INFO: [ action_begin ] --END-- [ RunTime:0.000027s ]
+SQL: SHOW COLUMNS FROM `onethink_ucenter_member` [ RunTime:0.004597s ]
+SQL: SELECT * FROM `onethink_ucenter_member` WHERE ( `username` = 'root' ) LIMIT 1   [ RunTime:0.000295s ]
+
+[ 2018-11-04T11:46:33+08:00 ] ::1 /onethink/www/index.php?s=/admin/public/login.html
+INFO: [ app_begin ] --START--
+INFO: Run Think\Behavior\ReadHtmlCache [ RunTime:0.000054s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000550s ]
+INFO: [ action_begin ] --START--
+INFO: [ action_begin ] --END-- [ RunTime:0.000027s ]
+SQL: SHOW COLUMNS FROM `onethink_ucenter_member` [ RunTime:0.004646s ]
+SQL: SELECT * FROM `onethink_ucenter_member` WHERE ( `username` = 'root' ) LIMIT 1   [ RunTime:0.000327s ]
+
+[ 2018-11-04T11:47:25+08:00 ] ::1 /onethink/www/index.php?s=/admin/public/login.html
+INFO: [ app_begin ] --START--
+INFO: Run Think\Behavior\ReadHtmlCache [ RunTime:0.000049s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000542s ]
+INFO: [ action_begin ] --START--
+INFO: [ action_begin ] --END-- [ RunTime:0.000027s ]
+SQL: SHOW COLUMNS FROM `onethink_ucenter_member` [ RunTime:0.004727s ]
+SQL: SELECT * FROM `onethink_ucenter_member` WHERE ( `username` = 'Administrator' ) LIMIT 1   [ RunTime:0.000294s ]
+SQL: UPDATE `onethink_ucenter_member` SET `last_login_time`=1541303245,`last_login_ip`=0 WHERE ( `id` = 1 ) [ RunTime:0.000392s ]
+SQL: SHOW COLUMNS FROM `onethink_member` [ RunTime:0.004449s ]
+SQL: SELECT `uid`,`nickname`,`sex`,`birthday`,`qq`,`score`,`login`,`reg_ip`,`reg_time`,`last_login_ip`,`last_login_time`,`status` FROM `onethink_member` WHERE ( `uid` = 1 ) LIMIT 1   [ RunTime:0.000319s ]
+SQL: SHOW COLUMNS FROM `onethink_action` [ RunTime:0.004278s ]
+SQL: SELECT * FROM `onethink_action` WHERE ( `name` = 'user_login' ) LIMIT 1   [ RunTime:0.000286s ]
+SQL: SHOW COLUMNS FROM `onethink_action_log` [ RunTime:0.004892s ]
+SQL: INSERT INTO `onethink_action_log` (`action_id`,`user_id`,`action_ip`,`model`,`record_id`,`create_time`,`remark`) VALUES (1,1,0,'member',1,1541303245,'操作url：/onethink/www/index.php?s=/admin/public/login.html') [ RunTime:0.000490s ]
+SQL: SELECT * FROM `onethink_action` WHERE ( `name` = 'user_login' ) LIMIT 1   [ RunTime:0.000284s ]
+NOTIC: [8] Undefined offset: 1 D:\phpStudy\PHPTutorial\WWW\onethink\www\Application\Common\Common\function.php 第 605 行.
+NOTIC: [2] array_key_exists() expects parameter 2 to be array, null given D:\phpStudy\PHPTutorial\WWW\onethink\www\Application\Common\Common\function.php 第 605 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `onethink_action_log` WHERE ( `action_id` = 1 ) AND ( `user_id` = 1 ) AND ( `create_time` > 1541216845 ) LIMIT 1   [ RunTime:0.000328s ]
+SQL: SHOW COLUMNS FROM `onethink_member` [ RunTime:0.004789s ]
+SQL: UPDATE `onethink_member` SET `score`=score+10 WHERE ( uid=1 AND status>-1 ) [ RunTime:0.000384s ]
+SQL: UPDATE `onethink_member` SET `login`=`login`+1,`last_login_time`=1541303245,`last_login_ip`=0 WHERE ( `uid` = 1 ) [ RunTime:0.000292s ]
+
+[ 2018-11-04T11:48:49+08:00 ] ::1 /onethink/www/index.php?s=/home/user/login.html
+INFO: [ app_begin ] --START--
+INFO: Run Think\Behavior\ReadHtmlCache [ RunTime:0.000058s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000547s ]
+INFO: [ action_begin ] --START--
+INFO: [ action_begin ] --END-- [ RunTime:0.000026s ]
+SQL: SHOW COLUMNS FROM `onethink_config` [ RunTime:0.004670s ]
+SQL: SELECT `type`,`name`,`value` FROM `onethink_config` WHERE ( `status` = 1 )  [ RunTime:0.000338s ]
+SQL: SHOW COLUMNS FROM `onethink_ucenter_member` [ RunTime:0.004612s ]
+SQL: SELECT * FROM `onethink_ucenter_member` WHERE ( `username` = 'root' ) LIMIT 1   [ RunTime:0.000287s ]
+
+[ 2018-11-04T11:49:08+08:00 ] ::1 /onethink/www/index.php?s=/home/user/login.html
+INFO: [ app_begin ] --START--
+INFO: Run Think\Behavior\ReadHtmlCache [ RunTime:0.000077s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000734s ]
+INFO: [ action_begin ] --START--
+INFO: [ action_begin ] --END-- [ RunTime:0.000027s ]
+SQL: SHOW COLUMNS FROM `onethink_config` [ RunTime:0.004691s ]
+SQL: SELECT `type`,`name`,`value` FROM `onethink_config` WHERE ( `status` = 1 )  [ RunTime:0.000380s ]
+SQL: SHOW COLUMNS FROM `onethink_ucenter_member` [ RunTime:0.004698s ]
+SQL: SELECT * FROM `onethink_ucenter_member` WHERE ( `username` = 'Administrator' ) LIMIT 1   [ RunTime:0.000340s ]
+SQL: UPDATE `onethink_ucenter_member` SET `last_login_time`=1541303347,`last_login_ip`=0 WHERE ( `id` = 1 ) [ RunTime:0.000322s ]
+SQL: SHOW COLUMNS FROM `onethink_member` [ RunTime:0.004479s ]
+SQL: SELECT `uid`,`nickname`,`sex`,`birthday`,`qq`,`score`,`login`,`reg_ip`,`reg_time`,`last_login_ip`,`last_login_time`,`status` FROM `onethink_member` WHERE ( `uid` = 1 ) LIMIT 1   [ RunTime:0.000278s ]
+SQL: UPDATE `onethink_member` SET `login`=`login`+1,`last_login_time`=1541303347,`last_login_ip`=0 WHERE ( `uid` = 1 ) [ RunTime:0.000280s ]
+SQL: SHOW COLUMNS FROM `onethink_ucenter_member` [ RunTime:0.004636s ]
+SQL: SELECT `id`,`username`,`email`,`mobile`,`status` FROM `onethink_ucenter_member` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000378s ]
+SQL: SHOW COLUMNS FROM `onethink_action` [ RunTime:0.004588s ]
+SQL: SELECT * FROM `onethink_action` WHERE ( `name` = 'user_login' ) LIMIT 1   [ RunTime:0.000319s ]
+SQL: SHOW COLUMNS FROM `onethink_action_log` [ RunTime:0.004389s ]
+SQL: INSERT INTO `onethink_action_log` (`action_id`,`user_id`,`action_ip`,`model`,`record_id`,`create_time`,`remark`) VALUES (1,1,0,'member',1,1541303347,'操作url：/onethink/www/index.php?s=/home/user/login.html') [ RunTime:0.000367s ]
+SQL: SELECT * FROM `onethink_action` WHERE ( `name` = 'user_login' ) LIMIT 1   [ RunTime:0.000294s ]
+NOTIC: [8] Undefined offset: 1 D:\phpStudy\PHPTutorial\WWW\onethink\www\Application\Common\Common\function.php 第 605 行.
+NOTIC: [2] array_key_exists() expects parameter 2 to be array, null given D:\phpStudy\PHPTutorial\WWW\onethink\www\Application\Common\Common\function.php 第 605 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `onethink_action_log` WHERE ( `action_id` = 1 ) AND ( `user_id` = 1 ) AND ( `create_time` > 1541216947 ) LIMIT 1   [ RunTime:0.000331s ]
+
+[ 2018-11-04T12:12:20+08:00 ] ::1 /onethink/www/index.php?s=/home/fetch
+ERR: 非法操作:index
+
+[ 2018-11-04T12:31:27+08:00 ] ::1 /onethink/www/index.php?s=/home/fetch
+ERR: 非法操作:index
+
+[ 2018-11-04T12:31:28+08:00 ] ::1 /onethink/www/index.php?s=/home/fetch
+ERR: 非法操作:index
+
+[ 2018-11-04T12:31:36+08:00 ] ::1 /onethink/www/index.php?s=/home/fetch.html
+ERR: 非法操作:index
+
+[ 2018-11-04T12:31:43+08:00 ] ::1 /onethink/www/index.php?s=/home/fetch
+ERR: 非法操作:index
+
+[ 2018-11-04T12:31:46+08:00 ] ::1 /onethink/www/index.php?s=/home/fetch.html
+ERR: 非法操作:index
+
+[ 2018-11-04T12:31:48+08:00 ] ::1 /onethink/www/index.php?s=/home/fetch.html
+ERR: 非法操作:index
+
+[ 2018-11-04T12:31:59+08:00 ] ::1 /onethink/www/index.php?s=/home/user/fetch.html
+ERR: 非法操作:fetch
+
